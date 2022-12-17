@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+  }
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    background-color: #ffffff;
+    background-image: url("./img/background.png");
+    color: white;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #000;
+
+}
+h2{
+    margin: .5rem 1.5rem ;
+    
+}
+#post{
+    background-color: #eaeaea;
+}
+#login_email{
+border: none;
+border-radius: .7rem;
+
+}
+#login_lozinka{
+border: none;
+border-radius: .7rem;
+
+}
+p{
+    color: #000;
+
+}
+button{
+    cursor: pointer;
+   
+border-radius: .7rem;
+background-color: #ffffff;
+}
+.input{
+    border-radius: .7rem;
+    border: none;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.top{
+   display: flex;
+    height: 4rem;
+    width: 100%;
+    margin: 3rem 0;
+    justify-content: center;
+    
+}
+.top-logo{
+    height: 4rem;
+    width: auto;
+    
+    
+}
+.main-wrapper {
+    max-width: 65rem;
+    margin:auto;
+    background-color: rgba(93, 93, 93, 0.469);
+    box-shadow: 7px 7px 15px 7px hsl(0, 0%, 85%);
+    padding: 5rem;
+    border-radius: 1.5rem;
+}
+
+form div{
+    padding: 1.5rem;
+
+}
+form div label{
+    display: block;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+form div input{
+    height: 5rem;
+    width: 100%;
+    font-size:1.8rem;
+    padding: 0 1rem;
+}
+form div button{
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+}
+form ul li {
+    color: red;
+
+}
+form ul{
+    list-style: none;
+}
+.no-acc-register{
+    text-align: center;
+    margin-top: 3rem;
+}
+.no-acc-register button {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+}
+.no-acc-register p{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.custom-modal{
+    display:none;
+    border-radius: 2rem;
+    background-color: rgb(46, 46, 46);
+    box-shadow: rgba(255, 255, 255, 0.8)0 0 1000px 1000px;
+    max-width: 65rem;
+    margin: auto;
+    padding:5rem ;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100;
+}
+.custom-modal button#closeModal {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 3rem;
+}
+.inner-container{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 7px 7px 15px 7px hsl(0, 0%, 85%);
+    background-color: #ffffff;
+
+}
+
+.inner-container.left-side {
+    text-align: center;
+    color: #000;
+    
+}
+.img-profile {
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin:auto;
+    box-shadow: 7px 7px 15px 7px hsl(0, 0%, 85%);
+    margin-bottom: 4rem;
+ }
+ #logout{
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+   color: red;
+   border:solid 2px red 
+    
+    
+ }
+ #editAccount{
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+ }
+ .inner-container.right-side form{
+    display: flex;
+    height: 10rem;
+ }
+ .inner-container.right-side form textarea{
+   width: 85%;
+   border: 0;
+   padding: 1rem;
+   resize: none;
+   
+ }
+ .inner-container.right-side form button{
+    width: 15%;
+    border: 0;
+ } 
+ #deleteProfile{
+    margin-left: 1.5rem;
+    border: .2rem solid red;
+    color: red;
+    padding: .5rem 1.5rem;
+ }
+ #allPostsWrapper .single-post{
+    background-color: #eaeaea;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: .8rem;
+    color: #000;
+
+ }
+ #allPostsWrapper .single-post .post-actions {
+   display: flex;
+   justify-content: space-between;
+   color: gray;
+ }
+ #allPostsWrapper .single-post .post-actions div button.like-btn {
+  background-image: url("img/like.png");
+  padding: .5rem 1.5rem .5rem 4rem;
+  background-repeat: no-repeat;
+  background-position: 1rem;
+  border: 0;
+ }
+ #allPostsWrapper .single-post .post-actions div button.comment-btn {
+   
+   background-image: url("img/comment.png");
+   padding: .5rem 1.5rem .5rem 4rem;
+   background-repeat: no-repeat;
+   background-position: 1rem;
+   border: 0;
+}
+.remove-btn {
+    border-color: red;
+    color: red;
+    border-radius: 1rem;
+    padding: .2rem 1.5rem;
+    margin-left: .3rem;
+   }
+ #allPostsWrapper .single-post .post-content {
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+ }
+ #allPostsWrapper .single-post .post-comments form  {
+    height: 30%;
+    margin-top: 1.5rem;
+ }
+ #allPostsWrapper .single-post .post-comments form input{
+    width: 85%;
+    padding: 0 1rem;
+ }
+ #allPostsWrapper .single-post .post-comments form button{
+    width: 15%;
+    background-color: grey;
+ }
+ #allPostsWrapper .single-post .post-comments {
+   display: none;
+ }
+ .btn-open{
+    display: block
+ }
+ #allPostsWrapper .single-post .single-comment {
+    border-radius: .7rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+  }
+.comment-author{
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger{
+  background-image: url("img/profile-blk.png");
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 2rem 2rem 0 0;
+    
+  display: none;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+
+    #allPostsWrapper .single-post .post-content {
+        font-size: 1.6rem;
+    }
+    #allPostsWrapper .single-post .post-actions div button.comment-btn {
+        padding: .3rem 1.3rem .3rem 3.7rem;
+        background-repeat: no-repeat;
+        background-position: 1rem;
+        background-size: 1.8rem;
+        border: 0;
+     }
+     #allPostsWrapper .single-post .post-actions div button.like-btn {
+        
+        padding: .3rem 1.3rem .3rem 3.7rem;
+        background-repeat: no-repeat;
+        background-position: 1rem;
+        background-size: 1.8rem;
+        border: 0;
+       }
+     #editAccount{
+        padding: .3rem 1.3rem;
+        border-radius: .5rem;
+     }
+     #logout{
+        padding: .3rem 1.3rem;
+        border-radius: .5rem;
+     
+     }
+  }
+
+
+  @media only screen and (max-width: 991px) {
+    
+    #allPostsWrapper .single-post .post-content {
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid black;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+     }
+     .post-actions{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+     }
+     
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .col-md-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .inner-container.left-side {
+       /* display: none; */
+    
+       position:fixed;
+        margin-top: 20rem;
+       height: 20rem;
+       width: 70vw;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       transform: 1s ease-in-out;
+     
+    }
+    .closed{
+        display: none;
+    }
+    .img-profile{
+        height: 70%;
+        width: auto;
+        margin: 1rem;
+
+    }
+    .top{
+        display: flex;
+        height: 6rem;
+        margin:0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: none;
+
+         
+     }
+     .top-logo{
+       
+        height: 3rem;
+        width: auto;
+     }
+     .inner-container.right-side{
+       margin: 3rem 2rem;
+     }
+    .post-content{
+        height: auto;
+        
+    }
+    .post-comments{
+        margin: 0rem;
+    }
+    .comment-btn{
+        font-size: 0;
+        height: 2.8rem;
+        margin-left: .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    #allPostsWrapper .single-post .post-comments form input{
+        width: 100%;
+        padding: .5rem 1rem;
+     }
+     #allPostsWrapper .single-post .post-comments form button{
+        width: 40%;
+        margin: 1rem 0;
+        padding: .4rem;
+        background-color: grey;
+     }
+     #allPostsWrapper .single-post .post-comments form  {
+        height: 30%;
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+     }
+     .hamburger{
+        display: block;
+     }
+  }
