@@ -330,6 +330,12 @@ form ul{
         justify-content: center;
         flex-direction: column;
      }
+    
+     #logout{
+    
+        margin: 1rem;
+        
+     }
      
   }
 
@@ -347,28 +353,27 @@ form ul{
        
     }
     .inner-container.left-side {
-       /* display: none; */
+       
     
        position:fixed;
         margin-top: 20rem;
        height: 20rem;
-       width: 70vw;
+       width: 95vw;
        display: flex;
        flex-direction: row;
        align-items: center;
-       justify-content: center;
+       justify-content: space-around;
        transform: 1s ease-in-out;
-     
+       display: none;
     }
-    .closed{
-        display: none;
-    }
+   
     .img-profile{
         height: 70%;
         width: auto;
         margin: 1rem;
 
     }
+   
     .top{
         display: flex;
         height: 6rem;
@@ -384,6 +389,7 @@ form ul{
        
         height: 3rem;
         width: auto;
+        margin: 1rem 0 0 1rem;
      }
      .inner-container.right-side{
        margin: 3rem 2rem;
