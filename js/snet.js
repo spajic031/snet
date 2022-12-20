@@ -24,10 +24,10 @@ document.querySelector("#logout").addEventListener("click", (e) => {
 //hamburger
 document.querySelector(".hamburger").addEventListener("click", () => {
   let x = document.querySelector(".inner-container.left-side");
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-  } else {
+  if (x.style.display === "flex") {
     x.style.display = "none";
+  } else {
+    x.style.display = "flex";
   }
 });
 //close customize
