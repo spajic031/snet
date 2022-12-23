@@ -47,9 +47,7 @@ class Post {
       body: data,
     })
       .then((response) => response.json())
-      .then((data) => {
-        alert("You liked this post!");
-      });
+      .then((data) => {});
   }
 
   delete(post_id) {
@@ -57,8 +55,6 @@ class Post {
       method: "DELETE",
     })
       .then((response) => response.json())
-      .then((data) => {
-        alert("post obrisan!");
-      });
+      .then((data) => {});
   }
 }

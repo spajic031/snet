@@ -50,7 +50,7 @@ document.querySelector("#registrationForm").addEventListener("submit", (e) => {
     user.password = document.querySelector("#register_lozinka").value;
     user.create();
   } else {
-    alert("nije ok!!!!");
+    alert("something went wrong 🤷");
   }
 });
 

@@ -76,7 +76,7 @@ class User {
           }
         });
         if (login_successful === 0) {
-          alert("Pogresan email ili lozinka!");
+          alert("Wrong username or password");
         }
       });
   }

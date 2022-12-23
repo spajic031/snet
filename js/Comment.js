@@ -47,8 +47,6 @@ class Comment {
       method: "DELETE",
     })
       .then((response) => response.json())
-      .then((data) => {
-        alert("Comment obrisan!  id= " + id);
-      });
+      .then((data) => {});
   }
 }
